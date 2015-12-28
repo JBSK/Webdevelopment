@@ -1,0 +1,730 @@
+body{
+	background-color: #EECB6D;
+}
+
+#main{
+	/** padding:15px; **/
+}
+
+/**header/menu **/
+
+#headerpusher{
+		position:relative;
+	width: 100%; 
+	height: 120px; 
+}
+
+#header {
+	width: 100%; 
+	height: 120px; 
+	background-color:#1f8dd6;
+	position:fixed;
+	top:0;
+	z-index: 10;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+	.logo {
+	   background-image: url("imgs/logo.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% auto;
+	   margin:0px 0px 0px 5px; /* If you want no margin */
+	   padding:0px; /*if your want to padding */
+	   height: 78px;
+       width: 100px;
+       top: -8px;
+       left: -4px;
+       position: relative;
+	}
+	
+	#header .titel{
+		text-align:center;
+		color:white;
+		font-size: 2.5em;
+		max-font-size: 50px;
+		min-font-size: 20px;
+		display: block;
+	}
+	#header .login{
+		right:0px;
+		margin:10px;
+		height:95px;
+	
+	}
+	#header .login button{
+		height:100%;
+		width:auto;
+		padding:30px;
+		float:right;
+		
+	}
+	
+	.login{
+		text-align:right;
+	}
+	
+	
+/*******************Content*************/
+.content{
+padding: 10px;
+   
+    background: -webkit-repeating-radial-gradient(#E6CB83, #F1D17D 10%, #eecb6d 16%);
+     background: -o-repeating-radial-gradient(#E6CB83, #F1D17D 10%, #eecb6d 16%);
+      background: -moz-repeating-radial-gradient(#E6CB83, #F1D17D 10%, #eecb6d 16%);
+       background: repeating-radial-gradient(#E6CB83, #F1D17D 10%, #eecb6d 16%);
+    /* background: white; */
+    /* border: 5px solid #F1DE84; */
+    border-color: #EECB6D;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 60%;
+    font-size: 20px;
+
+}
+
+@media /*screen and (min-width: 600px) and (max-width: 4000px) {*/ (max-width: 62em) {
+	.content {
+		max-width: 75%;
+	}
+}
+/********************** Test Menu *****************/
+.menu{
+
+	border: 0px;
+}
+.menulist{
+
+height:100%;
+
+}
+.menupusher{
+height:70px;
+width:100%;
+}
+
+.custom-menu-wrapper {
+z-index:90;
+	/* position:fixt; */
+    background-color: #0C1F7E;
+    margin-bottom: 2.5em;
+    white-space: nowrap;
+    position: relative;
+	width:100%;
+	height:78px;
+	position:fixed;
+}
+
+.custom-menu {
+	z-index:90;
+	/* position:fixt */
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+.balkfill{
+	    z-index: 8;
+		top: 78px;
+
+
+		}
+.balkfill:not(:-moz-handler-blocked) {
+    overflow-x:hidden;
+}
+
+.custom-menu .pure-menu-link,
+.custom-menu .pure-menu-heading {
+    color: white;
+}
+
+.custom-menu .pure-menu-link:hover,
+.custom-menu .pure-menu-heading:hover {
+    background-color: #5462a4;
+}
+
+.custom-menu-top {
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.custom-menu-brand {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.custom-menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    display: none;
+}
+
+.custom-menu-toggle .bar {
+    background-color: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 22px;
+    right: 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-menu-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-menu-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-menu-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.custom-menu-screen {
+    background-color: rgba(12, 31, 126, 0.7);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    height: 3em;
+    width: 70em;
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+}
+
+.custom-menu-tucked .custom-menu-screen {
+    -webkit-transform: translateY(-44px);
+    -moz-transform: translateY(-44px);
+    -ms-transform: translateY(-44px);
+    transform: translateY(-44px);
+}
+
+@media (max-width: 62em) {
+
+    .custom-menu {
+        display: block;
+    }
+
+    .custom-menu-toggle {
+        display: block;
+        display: none\9;
+    }
+
+    .custom-menu-bottom {
+        position: absolute;
+        width: 100%;
+		border-top: 1px solid #6f6f6f;
+        background-color: #808080\9;
+        z-index: 100;
+    }
+
+    .custom-menu-bottom .pure-menu-link {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .custom-menu-bottom.custom-menu-tucked .pure-menu-link {
+        -webkit-transform: translateX(-140px);
+        -moz-transform: translateX(-140px);
+        -ms-transform: translateX(-140px);
+        transform: translateX(-140px);
+        opacity: 0;
+        opacity: 1\9;
+		padding:0px;
+    }
+
+    .pure-menu-horizontal.custom-menu-tucked {
+        z-index: -1;
+        top: 78px;
+        position: absolute;
+        overflow: hidden;
+    }
+}
+
+/***************slash**************/
+.splash-container {
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+.splashbg{
+	height:100%;
+	width:100%;
+    background-image: url('imgs/bg.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+	background-size:100%;
+	position: absolute;
+    top: 50px;
+	background-color:#0C1F7E;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 40%;
+	min-width:500px;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+}
+
+/* This is the main heading that appears on the blue section */
+.shoutTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+	text-align:left;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+	.shoutOut{
+		font-size: 1.5em;
+		color:yellow;
+		text-align:center; /* center-left? */
+	}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 50%;
+	left:0;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+	background-color:#EECB6D;
+}
+/******footer****/
+.footer{
+	width:100%;
+    max-width: 916px;
+    font: normal 90% 'trebuchet ms', arial, sans-serif;
+    height: 28px;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    background: transparent;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom:45px;
+}
+
+/*********Navi*************/
+
+#btn{ /* button next question*/
+	text-align: center;
+	padding-top: 20px;
+}
+
+#naviButtons{
+}
+	#naviButtons input[type="submit"]{
+				margin: 5px 10px;
+	}
+
+	#naviButtons .back{
+
+	}
+	@media screen and (min-width: 600px) and (max-width: 4000px) {
+		#naviButtons .downloadPDF{
+			float:right;
+		}
+
+		#naviButtons .mailResult{
+			float:right;
+		}
+}
+/*******************Index*************/
+
+
+	
+/**************test/vragenlijst**********/
+
+		.content .statTest{
+	  width: 400px;
+	  max-width: 100%;
+	  background: #edeff1;
+      margin: 0px auto 0px auto;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  border-radius: 10px;
+	  text-align:center;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	}
+
+	.content .statTest input[type="text"]{
+	  display: block;
+	  width: 309px;
+	  max-width: 80%;
+	  height: 35px;
+	  margin: 15px auto;
+	  background: #fff;
+	  border: 0px;
+	  padding: 5px;
+	  font-size: 16px;
+	   border: 2px solid #fff;
+	  transition: all 0.3s ease;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	}
+
+	.content .statTest input[type="text"]:focus{
+	  border: 2px solid #1abc9d
+	}
+
+	.content .statTest input[type="submit"]{
+	  display: block;
+	 /* background: #1abc9d;*/
+	  width: 314px;
+	  max-width: 80%;
+	  padding: 12px;
+	  cursor: pointer;
+	  color: #fff;
+	  border: 0px;
+	  margin: auto;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  font-size: 17px;
+	  transition: all 0.3s ease;
+	}
+
+	.content .statTest input[type="submit"]:hover{
+	/*  background: #09cca6*/
+	}
+
+	.content .statTest a{
+	  text-align: center;
+	  font-family: Arial;
+	  color: gray;
+	  display: block;
+	  margin: 15px auto;
+	  text-decoration: none;
+	  transition: all 0.3s ease;
+	  font-size: 12px;
+	}
+
+	.content .statTest a:hover{
+	  color: #1abc9d;
+	}
+
+
+	.content .statTest ::-webkit-input-placeholder {
+	   color: gray;
+	}
+
+	.content .statTest :-moz-placeholder { /* Firefox 18- */
+	   color: gray;  
+	}
+
+	.content .statTest ::-moz-placeholder {  /* Firefox 19+ */
+	   color: gray;  
+	}
+
+	.content .statTest :-ms-input-placeholder {  
+	   color: gray;  
+	}
+
+/**************Stellingbattle************/
+	.content #vraag{
+		width:100%;
+		padding-top:0px;
+		margin-top:0px;
+		text-align: center;
+
+	}
+
+	.stellingen{
+		text-align:center;
+	}
+
+	/************Div Table****************/
+
+	.tabel{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.tableHeader{
+		text-align:center;
+		border:1px solid #e6eaf4;
+		margin:-1px;
+		background-color:#d1d7eb;
+		font-weight: bold;
+	}
+
+	.radioButtonSoms{
+		text-align:center;
+		margin:0;
+		background-color: #f1f3f9;
+
+	}
+
+	.radioButtonVaak{
+		text-align:center;
+		margin:0;
+		background-color:#e6eaf4;
+
+	}
+	.radioButtonMidden{
+		text-align:center;
+		margin:0px;
+		background-color: #ffffff;
+
+	}
+
+
+/******************Login*********/
+
+	.content .loginForm{
+	  width: 400px;
+	  max-width: 100%;
+	  background: #edeff1;
+      margin: 0px auto 30px auto;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  border-radius: 10px;
+	  text-align:center;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	}
+
+	.content .loginForm input[type="text"]{
+	  display: block;
+	  width: 309px;
+	  max-width: 80%;
+	  height: 35px;
+	  margin: 15px auto;
+	  background: #fff;
+	  border: 0px;
+	  padding: 5px;
+	  font-size: 16px;
+	   border: 2px solid #fff;
+	  transition: all 0.3s ease;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	}
+
+	.content .loginForm input[type="text"]:focus{
+	  border: 2px solid #1abc9d
+	}
+
+	.content .loginForm input[type="submit"]{
+	  display: block;
+	 /* background: #1abc9d;*/
+	  width: 314px;
+	  max-width: 80%;
+	  padding: 12px;
+	  cursor: pointer;
+	  color: #fff;
+	  border: 0px;
+	  margin: auto;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  font-size: 17px;
+	  transition: all 0.3s ease;
+	}
+
+	.content .loginForm input[type="submit"]:hover{
+	/*  background: #09cca6*/
+	}
+
+	.content .loginForm a{
+	  text-align: center;
+	  font-family: Arial;
+	  color: gray;
+	  display: block;
+	  margin: 15px auto;
+	  text-decoration: none;
+	  transition: all 0.3s ease;
+	  font-size: 12px;
+	}
+
+	.content .loginForm a:hover{
+	  color: #1abc9d;
+	}
+
+
+	.content .loginForm ::-webkit-input-placeholder {
+	   color: gray;
+	}
+
+	.content .loginForm :-moz-placeholder { /* Firefox 18- */
+	   color: gray;  
+	}
+
+	.content .loginForm ::-moz-placeholder {  /* Firefox 19+ */
+	   color: gray;  
+	}
+
+	.content .loginForm :-ms-input-placeholder {  
+	   color: gray;  
+	}
+	
+/******************Registreerpagina*********/
+
+	.content .registerForm{
+        width: 400px;
+        max-width: 100%;
+        background: #edeff1;
+        margin: 0px auto 30px auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align:center;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+	}
+
+	.content .registerForm input[type="text"],input[type="email"],input[type="password"]{
+        display: block;
+        width: 309px;
+        max-width: 80%;
+        height: 35px;
+        margin: 15px auto;
+        background: #fff;
+        border: 0px;
+        padding: 5px;
+        font-size: 16px;
+        border: 2px solid #fff;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+	}
+
+	.content .registerForm input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+        border: 2px solid #1abc9d
+	}
+
+	.content .registerForm input[type="submit"]{
+        display: block;
+        /* background: #1abc9d;*/
+        width: 314px;
+        max-width: 80%;
+        padding: 12px;
+        cursor: pointer;
+        color: #fff;
+        border: 0px;
+        margin: auto;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        font-size: 17px;
+        transition: all 0.3s ease;
+	}
+
+	.content .registerForm input[type="submit"]:hover{
+	/*  background: #09cca6*/
+	}
+
+	.content .registerForm a{
+        text-align: center;
+        font-family: Arial;
+        color: gray;
+        display: block;
+        margin: 15px auto;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 12px;
+	}
+
+	.content .registerForm a:hover{
+	  color: #1abc9d;
+	}
+
+
+	.content .registerForm ::-webkit-input-placeholder {
+	   color: gray;
+	}
+
+	.content .registerForm :-moz-placeholder { /* Firefox 18- */
+	   color: gray;  
+	}
+
+	.content .registerForm ::-moz-placeholder {  /* Firefox 19+ */
+	   color: gray;  
+	}
+
+	.content .registerForm :-ms-input-placeholder {  
+	   color: gray;  
+	}
+	
+/***************Geschiedenis*************************/
+	.content .resultList{
+		width:100%;
+	}
+		.content .resultList .butCol{
+			max-width:120px;
+			min-width:100px;
+			width:100px;
+		
+		}
+/****************resultaten**********/
+
+
+
+	
+
+
+
+	

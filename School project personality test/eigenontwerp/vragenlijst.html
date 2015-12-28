@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+
+    <title>PersoonlijkheidstestHalewijn</title>
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+<!--<![endif]-->
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        
+    <!--<![endif]-->
+		<link rel="stylesheet" href="CSS/skinPT.css" type="text/css" />
+		<link rel="stylesheet" href="css/layouts/side-menu.css">
+		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+  
+
+</head>
+<body>
+
+<div id="headerpusher"></div>
+<div id="header" class="pure-skin-PT">
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+				</div>
+
+                <div class="pure-u-1-2">
+						<div class="titel"><p>Halewijn</p></div>
+				</div>
+				<div class="pure-u-1-4">
+						<div class="login">
+						<button class="pure-button ">LogIn</button>
+						</div>
+				</div>
+			</div>
+</div><!-- end header -->
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+	<div id="menu">
+		<div class="pure-menu">
+			<ul class="pure-menu-list">
+
+				<div class="logo">&nbsp;</div>
+
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Take the test!</a></li>
+
+				<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+					<a href="#" class="pure-menu-link">Registreer</a>
+					<a href="#" class="pure-menu-link">Geschiedenis</a>
+
+				</li>
+
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Help</a></li>
+			</ul>
+		</div>
+	</div> <!-- end menu -->
+
+	<div id="main" class="pure-skin-PT">
+		<div class="content">
+			<h2 class="content-subhead" id="vraag"><p>Welke stelling past het meest bij jou?</p></h2>
+
+			<div class="pure-g">
+
+				<div class="pure-u-1 pure-u-md-5-24 stellingen">
+					<!--<div id="stelling1" class="stelling"> -->
+					<p> Stelling1 Stelling1Ste lling1 Stelling1Stelling1 Stelling1Stel ling1</p>
+					<!-- </div> -->
+				</div>
+
+				<div class="pure-u-1 pure-u-md-14-24 tabel">
+					<div class="pure-g">
+
+						<div class="pure-u-1 pure-u-md-4-24">
+							<div class="pure-g">
+								<div class="pure-u-1-3 pure-u-md-1 tableHeader">Vaak</div><div class="pure-u-2-3 pure-u-md-1 radioButtonVaak"><input id="option-one" type="radio" name="optionsRadios" value="option1" /></div>
+							</div>
+						</div>
+
+						<div class="pure-u-1 pure-u-md-5-24">
+							<div class="pure-g">
+								<div class="pure-u-1-3 pure-u-md-1 tableHeader">Soms</div><div class="pure-u-2-3 pure-u-md-1 radioButtonSoms"><input id="option-two" type="radio" name="optionsRadios" value="option2" /></div>
+							</div>
+						</div>
+
+						<div class="pure-u-1 pure-u-md-6-24">
+							<div class="pure-g">
+								<div class="pure-u-1-3 pure-u-md-1 tableHeader">Gemiddeld</div><div class="pure-u-2-3 pure-u-md-1 radioButtonMidden"><input id="option-three" type="radio" name="optionsRadios" value="option3" /></div>
+							</div>
+						</div>
+
+						<div class="pure-u-1 pure-u-md-5-24">
+							<div class="pure-g">
+								<div class="pure-u-1-3 pure-u-md-1 tableHeader">Soms</div><div class="pure-u-2-3 pure-u-md-1 radioButtonSoms"><input id="option-four" type="radio" name="optionsRadios" value="option4" /></div>
+							</div>
+						</div>
+
+						<div class="pure-u-1 pure-u-md-4-24">
+							<div class="pure-g">
+								<div class="pure-u-1-3 pure-u-md-1 tableHeader">Vaak</div><div class="pure-u-2-3 pure-u-md-1 radioButtonVaak"><input id="option-five" type="radio" name="optionsRadios" value="option5" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-5-24 stellingen">
+					<p>Steling2 St eling2Steli ng2Ste ling2 Steling2Steling2 Steling2Steling2 Steling2</p>
+				</div>
+
+			</div>
+			<div class="pure-g">
+
+				<div class="pure-u-1" id="btn">
+					<p>
+						<button class="pure-button">Volgende</button>
+					</p>
+				</div>
+			</div>
+
+		</div><!--end content -->
+	</div><!-- end pure skin / main -->
+</div>
+
+
+
+<script src="js/ui.js"></script>
+
+
+</body>
+</html>

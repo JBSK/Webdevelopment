@@ -1,0 +1,411 @@
+body{
+	/* background-image: url("imgs/bg.png"); */
+    background-color: #BDCDF5;
+	background-repeat: no-repeat;
+
+}
+
+
+/**header/menu **/
+
+#headerpusher{
+		position:relative;
+	width: 100%; 
+	height: 120px; 
+}
+
+#header {
+	width: 100%; 
+	height: 120px; 
+	background-color:#1f8dd6;
+	position:fixed;
+	top:0;
+	 z-index: 10;
+}
+	#header  div.logo {
+	   width:100%; /*width of your image*/
+	   content:url(imgs/PTlogo.png);
+	   margin:0; /* If you want no margin */
+	   padding:0; /*if your want to padding */
+	   height:120px;
+	   width:auto;
+	}
+	
+	#header .titel{
+		text-align:center;
+		color:white;
+		font-size: 4vw;
+		max-font-size: 50px;
+		min-font-size: 20px;
+		 display: block;
+	}
+	#header .login{
+		right:0px;
+		margin:10px;
+		height:95px;
+	
+	}
+	#header .login button{
+		height:100%;
+		width:auto;
+		padding:30px;
+		float:right;
+		
+	}
+	
+	
+/*******************Content*************/
+.content{
+    padding: 10px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 35px;
+    border: 15px solid #E6EAF4;
+
+}
+
+/*********Navi*************/
+
+#naviButtons{
+}
+	#naviButtons input[type="submit"]{
+				margin: 5px 10px;
+	}
+
+	#naviButtons .back{
+
+	}
+	@media screen and (min-width: 600px) and (max-width: 4000px) {
+		#naviButtons .downloadPDF{
+			float:right;
+		}
+
+		#naviButtons .mailResult{
+			float:right;
+		}
+}
+/*******************Index*************/
+
+	.content .shoutOut{
+		font-size: 1.5em;
+		color:yellow;
+	}
+
+	
+	
+/**************test/vragenlijst**********/
+/**************Stellingbattle************/
+	.content #vraag{
+		width:100%;
+		padding-top:150px;
+		margin-top:0px;
+
+	}
+	.content .stelling{
+		text-align:right;
+		float:left;
+		margin:10px;
+	}
+	.content #stelling1{
+		float:right;
+	}
+	.content #stelling2{
+
+	}
+	
+/*************tabel************/
+	.content .stellingbattle{
+		margin: 0 auto;
+		float:left;
+		width:100%;
+		border:0px;
+	}
+
+	@media screen and (min-width: 0px) and (max-width: 400px) {
+		.content .stellingbattle { display: block; 
+			border:0px;
+		}  /* show it on small screens */
+		.content .stellingbattle th{
+			align:left; 
+		}   /* hide it elsewhere */
+		.content .stellingbattle  thead {
+			float: left;   
+		}
+		.content .stellingbattle thead th {
+			display: block;   
+		}
+		.content .stellingbattle  tbody {
+			float: left;   
+		}
+		.content .stellingbattle tbody td{
+			display: block; 
+		}
+	}
+	@media screen and (min-width: 760px) and (max-width: 1250px) {
+		.content .stellingbattle { display: block; 
+			border:0px;
+			width:auto;  
+		  }  /* show it on small screens */
+
+		.content .stellingbattle th{ 
+			align:left; 
+		}   /* hide it elsewhere */
+		.content .stellingbattle  thead {
+			float: left;   
+		}
+		.content .stellingbattle thead th {
+			display: block;   
+		}
+		.content .stellingbattle  tbody {
+		  float: left;   
+		}
+		.content .stellingbattle tbody td{
+			display: block; 
+		}
+	}
+
+	/************Th****************/
+	/**************tD************/
+	.content .stellingbattle td:first-child{
+		background-color: #e6eaf4;
+	}
+
+	.content .stellingbattle td:nth-child(3){
+		background-color:white;
+
+	}
+
+	.content .stellingbattle td:last-child{
+		background-color: #e6eaf4;
+	}
+
+/******************Login*********/
+
+	.content .loginForm{
+	  width: 400px;
+	  background: #edeff1;
+      margin: 0px auto 30px auto;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  border-radius: 10px;
+	  text-align:center;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	}
+
+	.content .loginForm input[type="text"]{
+	  display: block;
+	  width: 309px;
+	  height: 35px;
+	  margin: 15px auto;
+	  background: #fff;
+	  border: 0px;
+	  padding: 5px;
+	  font-size: 16px;
+	   border: 2px solid #fff;
+	  transition: all 0.3s ease;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	}
+
+	.content .loginForm input[type="text"]:focus{
+	  border: 2px solid #1abc9d
+	}
+
+	.content .loginForm input[type="submit"]{
+	  display: block;
+	 /* background: #1abc9d;*/
+	  width: 314px;
+	  padding: 12px;
+	  cursor: pointer;
+	  color: #fff;
+	  border: 0px;
+	  margin: auto;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  font-size: 17px;
+	  transition: all 0.3s ease;
+	}
+
+	.content .loginForm input[type="submit"]:hover{
+	/*  background: #09cca6*/
+	}
+
+	.content .loginForm a{
+	  text-align: center;
+	  font-family: Arial;
+	  color: gray;
+	  display: block;
+	  margin: 15px auto;
+	  text-decoration: none;
+	  transition: all 0.3s ease;
+	  font-size: 12px;
+	}
+
+	.content .loginForm a:hover{
+	  color: #1abc9d;
+	}
+
+
+	.content .loginForm ::-webkit-input-placeholder {
+	   color: gray;
+	}
+
+	.content .loginForm :-moz-placeholder { /* Firefox 18- */
+	   color: gray;  
+	}
+
+	.content .loginForm ::-moz-placeholder {  /* Firefox 19+ */
+	   color: gray;  
+	}
+
+	.content .loginForm :-ms-input-placeholder {  
+	   color: gray;  
+	}
+	
+/******************Registreerpagina*********/
+
+	.content .registerForm{
+	  width: 400px;
+	  background: #edeff1;
+	  margin: 0px auto 30px auto;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  text-align:center;
+	  border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	}
+
+	.content .registerForm input[type="text"]{
+	  display: block;
+	  width: 309px;
+	  height: 35px;
+	  margin: 15px auto;
+	  background: #fff;
+	  border: 0px;
+	  padding: 5px;
+	  font-size: 16px;
+	   border: 2px solid #fff;
+	  transition: all 0.3s ease;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	}
+
+	.content .registerForm input[type="text"]:focus{
+	  border: 2px solid #1abc9d
+	}
+
+	.content .registerForm input[type="submit"]{
+	  display: block;
+	 /* background: #1abc9d;*/
+	  width: 314px;
+	  padding: 12px;
+	  cursor: pointer;
+	  color: #fff;
+	  border: 0px;
+	  margin: auto;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	  font-size: 17px;
+	  transition: all 0.3s ease;
+	}
+
+	.content .registerForm input[type="submit"]:hover{
+	/*  background: #09cca6*/
+	}
+
+	.content .registerForm a{
+	  text-align: center;
+	  font-family: Arial;
+	  color: gray;
+	  display: block;
+	  margin: 15px auto;
+	  text-decoration: none;
+	  transition: all 0.3s ease;
+	  font-size: 12px;
+	}
+
+	.content .registerForm a:hover{
+	  color: #1abc9d;
+	}
+
+
+	.content .registerForm ::-webkit-input-placeholder {
+	   color: gray;
+	}
+
+	.content .registerForm :-moz-placeholder { /* Firefox 18- */
+	   color: gray;  
+	}
+
+	.content .registerForm ::-moz-placeholder {  /* Firefox 19+ */
+	   color: gray;  
+	}
+
+	.content .registerForm :-ms-input-placeholder {  
+	   color: gray;  
+	}
+	
+/***************Geschiedenis*************************/
+	.content .resultList{
+		width:100%;
+	}
+		.content .resultList .butCol{
+			max-width:120px;
+			min-width:100px;
+			width:100px;
+		
+		}
+/****************resultaten**********/
+	.content .resultrow1{
+	min-height:200px;
+	margin-bottom:20px;
+	
+	}
+	/****************grafiekenrij**********/
+		.content .resultrow1 .radarGrafiek{
+			background-color:red;
+		}
+		.content .resultrow1 .staafGrafiek{
+			background-color:green;
+		}
+		.content .resultrow1 .uitkomst{
+			
+			background-color:blue;
+		}
+			.content .resultrow1 .uitkomst .resultTitle{
+				padding:10px;
+			}
+			.content .resultrow1 .uitkomst .primaryPType{
+				padding:10px;
+			}
+			.content .resultrow1 .uitkomst .secondaryPType{
+				padding:10px;
+			}
+	/*************begeleidende teksten**********/
+	.content .resultrow2 {
+		
+	}	
+		.content .resultrow2 .tekstResult1 {
+			
+		}	
+		.content .resultrow2 .tekstResult2 {
+			
+		}	
+	/**************antwoorden van de test**********/
+	.content .resultrow3{
+	
+	}
+		.content .resultrow3 .antwoordenLijst{
+		
+		}
+		
+
+
+	
+	
